@@ -4,17 +4,17 @@
           http://maven.apache.org/xsd/assembly-2.0.0.xsd">
     <id>dist-dir</id>
     <formats>
-        <format>dir</format>
+        <format>dir</format><!-- 打包形式为文件夹-->
     </formats>
     <includeBaseDirectory>false</includeBaseDirectory>
     <moduleSets>
         <moduleSet>
-            <useAllReactorProjects>true</useAllReactorProjects>
+            <useAllReactorProjects>true</useAllReactorProjects> <!-- 全部模块打包-->
             <includes>
                 <include>java9.sms:*</include>
             </includes>
             <binaries>
-                <outputDirectory>modules</outputDirectory>
+                <outputDirectory>modules</outputDirectory><!-- 输出到modules文件夹-->
                 <unpack>false</unpack>
             </binaries>
         </moduleSet>

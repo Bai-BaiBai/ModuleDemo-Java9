@@ -24,3 +24,5 @@ requires [模块名称]:
 
 provide [接口全限定名] with [实现类全限定名]:
  - 此模块中实现了依赖模块中的接口，需要将它声明在此模块的配置文件中
+
+runtime模块中添加了打包插件和assembly/runtime.xml打包配置信息
